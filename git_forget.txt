@@ -1,0 +1,13 @@
+# add this repo to local
+echo "# git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/haiboumich/git.git
+git push -u origin master
+
+# push and git push
+git status
+git add -A
+git commit -m "info"
+git push
