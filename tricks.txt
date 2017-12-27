@@ -1,0 +1,3 @@
+# Easy way to update the node.js
+$ npm install -g n
+$ n stable
