@@ -1,3 +1,7 @@
 # Easy way to update the node.js
 $ npm install -g n
 $ n stable
+
+# Short key for WebStorm
+Alt+F12: internal terminal
+Ctrl+shift+F10: Run the code
