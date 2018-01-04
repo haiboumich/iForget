@@ -5,3 +5,6 @@ $ n stable
 # Short key for WebStorm
 Alt+F12: internal terminal
 Ctrl+shift+F10: Run the code
+
+# To unpack a tar file
+$ tar -xvzf filename.tar.gz
