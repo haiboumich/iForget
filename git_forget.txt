@@ -11,3 +11,18 @@ git status
 git add -A
 git commit -m "info"
 git push
+
+# update to local
+$ git status # make sure there is no conflict before update
+$ git checkout -- filename # if the file has changed, we can restore it; if the file needs to be updated to the server, do the merge before update to local
+$ git branch # check the branch status
+$ git check out [remote branch] # if it is the local branch, then we need to change to the remote branch
+$ git pull
+
+# switch the branch
+$ git branch -a # check all the branches
+$ git branch # check the local branch
+$ git checkout [remote branch] # change to the branch
+# something might be helpful
+$ git checkout -b [new branch] [origin]/[new branch]
+$ git checkout master # switch back to master
