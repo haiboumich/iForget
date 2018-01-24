@@ -1,0 +1,23 @@
+# MySQL
+	$ mysql -u root -p (enter the password to enter the MySQL shell)
+mysql>
+	show databases;
+	create database <database name>;
+
+# SQLite
+# create datebase
+	$ sqlite3 testDB.db
+# check the databases
+	sqlite> 
+		.databases
+		.quit
+		# for specific purpose like CREAET, INSERT, SELECT, WHERE, UPDATE, DELETE refer w3school
+		.schema <table name> # to check the schema
+		# to output all the data in a good view
+		.header on
+		.mode column
+		.width 10, 20, 10 # to modify the column 1 2 3 width
+		SELECT * FROM <table name>;
+# dump between the .sql file and DB
+	$ sqlite3 testDB.db .dump > testDB.sql
+	$ sqlite3 testDB.db < testDB.sql
