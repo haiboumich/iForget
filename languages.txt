@@ -22,9 +22,3 @@ mysql>
 # dump between the .sql file and DB
 	$ sqlite3 testDB.db .dump > testDB.sql
 	$ sqlite3 testDB.db < testDB.sql
-
-# Docker
-# check images
-	$ docker images
-# rm docker image by image_id
-	$ docker rmi <image_id>

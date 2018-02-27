@@ -10,3 +10,12 @@ Ctrl+shift+F10: Run the code
 
 # To unpack a tar file
 $ tar -xvzf filename.tar.gz
+
+# Docker
+# check images
+	$ docker images
+# rm docker image by image_id
+	$ docker rmi <image_id>
+# speed up docker pull: https://www.docker-cn.com/registry-mirror
+	# example: just add registry.docker-cn.com before the image
+	$ docker pull registry.docker-cn.com/library/ubuntu:16.04
