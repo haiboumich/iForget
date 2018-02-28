@@ -19,3 +19,13 @@ $ tar -xvzf filename.tar.gz
 # speed up docker pull: https://www.docker-cn.com/registry-mirror
 	# example: just add registry.docker-cn.com before the image
 	$ docker pull registry.docker-cn.com/library/ubuntu:16.04
+# enter running docker container
+	$ docker exec -it <name> /bin/bash
+# remove
+	# docker image
+	$ docker rmi <image>
+	# docker container 
+	$ docker rm <container>
+	# docker volumes
+	$ docker volume ls # check the list of volumes
+	$ docker volume rm <volume_name>
