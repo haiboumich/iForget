@@ -21,6 +21,8 @@ $ tar -xvzf filename.tar.gz
 	$ docker pull registry.docker-cn.com/library/ubuntu:16.04
 # enter running docker container
 	$ docker exec -it <name> /bin/bash
+# read docker logs
+	$ docker log -f
 # remove
 	# docker image
 	$ docker rmi <image>
