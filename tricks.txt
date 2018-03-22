@@ -31,3 +31,5 @@ $ tar -xvzf filename.tar.gz
 	# docker volumes
 	$ docker volume ls # check the list of volumes
 	$ docker volume rm <volume_name>
+# if something like "permission denied" in docker, add the current user to the docker group, log out and log back install
+	sudo usermod -a -G docker $USER
