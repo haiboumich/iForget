@@ -25,11 +25,13 @@ $ tar -xvzf filename.tar.gz
 	$ docker log -f
 # remove
 	# docker image
-	$ docker rmi <image>
+		$ docker rmi <image1> <image2>
 	# docker container 
-	$ docker rm <container>
+		$ docker rm <container>
+	# all the currently-running containers:
+		$ docker rm -f $(docker ps -aq)
 	# docker volumes
-	$ docker volume ls # check the list of volumes
-	$ docker volume rm <volume_name>
+		$ docker volume ls # check the list of volumes
+		$ docker volume rm <volume_name>
 # if something like "permission denied" in docker, add the current user to the docker group, log out and log back install
 	sudo usermod -a -G docker $USER
