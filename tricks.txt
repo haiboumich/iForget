@@ -44,3 +44,7 @@ $ tar -xvzf filename.tar.gz
 	shift+g
 # go to the beginning of the file
 	press g twice
+# move to the of line
+	$(the last empty), A(it's like $ + i), g_(jump to last non blank)
+# move to the beginning
+	^ or _(move to the first non-whitespace char in the line), | or 0(zero)(move a little bit ahead of ^ or _) 
