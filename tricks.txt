@@ -38,3 +38,9 @@ $ tar -xvzf filename.tar.gz
 		$ docker volume rm <volume_name>
 # if something like "permission denied" in docker, add the current user to the docker group, log out and log back install
 	sudo usermod -a -G docker $USER
+
+# Vim
+# go to the end of file
+	shift+g
+# go to the beginning of the file
+	press g twice
