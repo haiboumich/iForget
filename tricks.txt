@@ -17,6 +17,9 @@ $ tar -xvzf filename.tar.gz
 # Docker
 # check images
 	$ docker images
+# check containers
+	docker ps
+	# -a means all, -l means the last run container
 # rm docker image by image_id
 	$ docker rmi <image_id>
 # speed up docker pull: https://www.docker-cn.com/registry-mirror
@@ -38,10 +41,18 @@ $ tar -xvzf filename.tar.gz
 		$ docker volume rm <volume_name>
 # stop docker container
 		$ docker container stop <docker container id>
+# start the container
+		$ docker start <docker container id>
+		# for the running docker containe, restart
+		$ docker restart <container id>
 # rename the docker image
 		$ docker tag oldrepo:tag newrepo:tag
 		# remove the old name if u want
 		$ docker rmi oldrepo
+# check the logs
+		$ docker logs -f <container id>
+# check the process in docker
+		$ docker top <container id>
 # if something like "permission denied" in docker, add the current user to the docker group, log out and log back install
 	sudo usermod -a -G docker $USER
 
