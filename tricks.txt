@@ -22,9 +22,13 @@ $ tar -xvzf filename.tar.gz
 	# -a means all, -l means the last run container
 # rm docker image by image_id
 	$ docker rmi <image_id>
-# speed up docker pull: https://www.docker-cn.com/registry-mirror
+# speed up docker pull if u r in China: https://www.docker-cn.com/registry-mirror
 	# example: just add registry.docker-cn.com before the image
 	$ docker pull registry.docker-cn.com/library/ubuntu:16.04
+	# If u r using ubuntu, to download from China image website for good, open /etc/default/docker and add a line at the end of the file
+		DOCKER_OPTS="--registry-mirror=https://registry.docker-cn.com"
+		# reboot the Docker service
+		$ sudo service docker restart
 # enter running docker container
 	$ docker exec -it <name> /bin/bash
 	# if there is no parameter -it during "docker run", we need use cmd above to enter the container
