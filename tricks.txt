@@ -53,6 +53,16 @@ $ tar -xvzf filename.tar.gz
 		$ docker logs -f <container id>
 # check the process in docker
 		$ docker top <container id>
+# Build the docker image
+	# method 1: update the existing image	
+		# First run a container based on the existing image
+		$ docker run -t -i ubuntu:16.04 /bin/bash
+		# Then run the update command inside the running container
+		$ apt-get update
+		# exit the container and commit the update version
+		$ docker commit -m="some messge" -a="author name" <container id> repo:tag
+	# method 2: build the docker image from the ground
+		# basically we need a Dockerfile, check how to write a Dockerfile by yourself
 # if something like "permission denied" in docker, add the current user to the docker group, log out and log back install
 	sudo usermod -a -G docker $USER
 
