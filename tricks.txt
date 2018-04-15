@@ -27,6 +27,7 @@ $ tar -xvzf filename.tar.gz
 	$ docker pull registry.docker-cn.com/library/ubuntu:16.04
 # enter running docker container
 	$ docker exec -it <name> /bin/bash
+	# if there is no parameter -it during "docker run", we need use cmd above to enter the container
 # read docker logs
 	$ docker log -f
 # remove
@@ -43,6 +44,7 @@ $ tar -xvzf filename.tar.gz
 		$ docker container stop <docker container id>
 # start the container
 		$ docker start <docker container id>
+		# diff from "docker run" which will build a new container every time, the docker start will only work on the existing one
 		# for the running docker containe, restart
 		$ docker restart <container id>
 # rename the docker image
@@ -51,6 +53,7 @@ $ tar -xvzf filename.tar.gz
 		$ docker rmi oldrepo
 # check the logs
 		$ docker logs -f <container id>
+		# when docker is running the container and there is -it for entering the container, we need this command to check the output
 # check the process in docker
 		$ docker top <container id>
 # Build the docker image
@@ -63,6 +66,8 @@ $ tar -xvzf filename.tar.gz
 		$ docker commit -m="some messge" -a="author name" <container id> repo:tag
 	# method 2: build the docker image from the ground
 		# basically we need a Dockerfile, check how to write a Dockerfile by yourself
+# copy the file from a running Docker container to local host
+		$ docker container cp <container ID>:</path/to/file>
 # if something like "permission denied" in docker, add the current user to the docker group, log out and log back install
 	sudo usermod -a -G docker $USER
 
