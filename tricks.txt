@@ -22,6 +22,9 @@ $ tar -xvzf filename.tar.gz
 	# -a means all, -l means the last run container
 # rm docker image by image_id
 	$ docker rmi <image_id>
+# rm all docker containers
+	$ docker rm -f $(docker ps -aq)
+	# -f: force, -a: all, -q: quiet(only show the id part)
 # speed up docker pull if u r in China: https://www.docker-cn.com/registry-mirror
 	# example: just add registry.docker-cn.com before the image
 	$ docker pull registry.docker-cn.com/library/ubuntu:16.04
