@@ -91,4 +91,5 @@ $ tar -xvzf filename.tar.gz
 # shell command
 # delete all files in current directory and its sub-directories where the file name starts with "foo"
 	$ find . -type f -name foo\* -exec rm {} \;
- 
+# check the port being used
+	$ sudo lsof -i tcp:<port number> 
