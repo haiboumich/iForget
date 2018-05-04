@@ -92,4 +92,8 @@ $ tar -xvzf filename.tar.gz
 # delete all files in current directory and its sub-directories where the file name starts with "foo"
 	$ find . -type f -name foo\* -exec rm {} \;
 # check the port being used
-	$ sudo lsof -i tcp:<port number> 
+	$ sudo lsof -i tcp:<port number>
+# to run the program at the background, first ctrl+z
+	$ bg
+	$ fg # put it front again and we can kill it by press ctrl+c
+
