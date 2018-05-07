@@ -96,4 +96,5 @@ $ tar -xvzf filename.tar.gz
 # to run the program at the background, first ctrl+z
 	$ bg
 	$ fg # put it front again and we can kill it by press ctrl+c
-
+# to send a post request
+	$ curl -i http://localhost:3000/users -d "name=test"
