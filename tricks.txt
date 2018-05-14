@@ -98,3 +98,5 @@ $ tar -xvzf filename.tar.gz
 	$ fg # put it front again and we can kill it by press ctrl+c
 # to send a post request
 	$ curl -i http://localhost:3000/users -d "name=test"
+# change the environment variables for mac
+	$ vim ~/.bash_profile
