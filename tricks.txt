@@ -100,3 +100,5 @@ $ tar -xvzf filename.tar.gz
 	$ curl -i http://localhost:3000/users -d "name=test"
 # change the environment variables for mac
 	$ vim ~/.bash_profile
+# change the file or directory role from root to work
+	$ chown work: <filename or directory>
