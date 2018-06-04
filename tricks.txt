@@ -11,9 +11,6 @@ Ctrl+shift+F10: Run the code
 # Webstorm tricks
 	# split edit view: right click the doc tab and choose split
 
-# To unpack a tar file
-$ tar -xvzf filename.tar.gz
-
 # Docker
 # check images
 	$ docker images
@@ -102,3 +99,7 @@ $ tar -xvzf filename.tar.gz
 	$ vim ~/.bash_profile
 # change the file or directory role from root to work
 	$ chown work: <filename or directory>
+# pack the file using tar
+	$ tar -zcvf <>.tar.gz <dir_name>/
+# To unpack a tar file
+	$ tar -xvzf filename.tar.gz
