@@ -79,7 +79,9 @@ Ctrl+shift+F10: Run the code
 # load docker image
 	$ docker load < <filename>.tar
 # check all the containers whose image name contains <string> and just print out the container ID
-	$ docker ps -a | awk '$2~/hyperledger/ {print $1}'
+	$ docker ps -a | awk '$2~/<string>/ {print $1}'
+# check all the docker images whose repo starts with <string> and just print out the image ID
+	docker images | grep "^<string>" | awk '{print $3}' 
 
 # Vim
 # go to the end of file
