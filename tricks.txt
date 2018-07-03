@@ -78,6 +78,8 @@ Ctrl+shift+F10: Run the code
 	$ docker save -o <filename>.tar <image_name>:version
 # load docker image
 	$ docker load < <filename>.tar
+# check all the containers whose image name contains <string> and just print out the container ID
+	$ docker ps -a | awk '$2~/hyperledger/ {print $1}'
 
 # Vim
 # go to the end of file
