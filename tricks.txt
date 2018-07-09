@@ -120,3 +120,5 @@ Ctrl+shift+F10: Run the code
 	$ tar -xvzf filename.tar.gz
 # send GET request to API
 	$ curl <ip_address>:<port>/<api>
+# change the usermode from root to work
+	$ su - work
