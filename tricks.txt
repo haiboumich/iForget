@@ -122,3 +122,10 @@ Ctrl+shift+F10: Run the code
 	$ curl <ip_address>:<port>/<api>
 # change the usermode from root to work
 	$ su - work
+# command for secureCRT
+	$ rz # upload file
+	$ sz -e <filename> # download file
+
+# shell if statements
+# check if the first arg is an empty string, where ! means 'not', -z meanns empty
+	if [! -z $1]; then
