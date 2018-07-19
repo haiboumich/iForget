@@ -129,3 +129,11 @@ Ctrl+shift+F10: Run the code
 # shell if statements
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty
 	if [! -z $1]; then
+
+# IntelliJ IDEA
+1. To open any class in the editor quickly, press ⌘O (Navigate | Class) and start typing the name of the class. Choose the class from a drop-down list that appears.
+2. The Code Completion feature lets you quickly complete different kinds of statements in the code. For example, start typing a class name and press ⌃Space to complete it. When multiple choices are available, they are shown in the lookup list.
+3. To navigate to the declaration of a class, method or variable used somewhere in the code, position the caret at the usage and press ⌘B (Navigate | Declaration). You can also click the mouse on usages with the Ctrl key pressed to jump to declarations.
+4. You can quickly navigate in the currently edited file with ⌘F12 (Navigate | File Structure).
+It shows the list of members of the current class. Select an element you want to navigate to and press the Enter key or the ⌘↓ key.
+To easily locate an item in the list, just start typing its name. 
