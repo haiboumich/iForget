@@ -125,6 +125,10 @@ Ctrl+shift+F10: Run the code
 # command for secureCRT
 	$ rz # upload file
 	$ sz -e <filename> # download file
+# find which file include the string under this folder
+	$ grep -nr '<string>*' .
+# list all fiiles in the current directory staring with <string>
+	$ find . -name <string>\*
 
 # shell if statements
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty
