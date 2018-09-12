@@ -26,3 +26,8 @@ $ git checkout [remote branch] # change to the branch
 # something might be helpful
 $ git checkout -b [new branch] [origin]/[new branch]
 $ git checkout master # switch back to master
+
+# merge 
+	$ git checkout <destination branch>
+	$ git merge <source branch>
+	$ git push
