@@ -131,6 +131,7 @@ Ctrl+shift+F10: Run the code
 # command for secureCRT
 	$ rz # upload file
 	$ sz -e <filename> # download file
+		# go to option/Session Option/\X/Y/Zmodem\ to configure the download path
 # find which file include the string under this folder
 	$ grep -nr '<string>*' .
 # list all fiiles in the current directory staring with <string>
