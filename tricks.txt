@@ -148,3 +148,7 @@ Ctrl+shift+F10: Run the code
 4. You can quickly navigate in the currently edited file with ⌘F12 (Navigate | File Structure).
 It shows the list of members of the current class. Select an element you want to navigate to and press the Enter key or the ⌘↓ key.
 To easily locate an item in the list, just start typing its name. 
+
+# Linux system
+# check the number of cpus
+	$ lscpu
