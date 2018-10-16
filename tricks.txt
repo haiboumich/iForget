@@ -1,3 +1,5 @@
+There is a website built for cheatsheet https://devhints.io/, I may want to build one for myself.
+
 # Node
 # Easy way to update the node.js
 	$ npm install -g n
