@@ -90,6 +90,8 @@ Ctrl+shift+F10: Run the code
 	$ systemctl restart docker $ restart the docker to activate the settin
 # change the default setting for storing the docker image and container data
 	config the /etc/docker/daemon.json or /usr/lib/systemd/system/docker.service fileg
+# copy files from docker container to host
+	docker cp <container ID>:/file/path/within/container /host/path
 
 # Vim
 # go to the end of file
