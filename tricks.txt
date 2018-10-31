@@ -140,6 +140,12 @@ Ctrl+shift+F10: Run the code
 	$ grep -nr '<string>*' .
 # list all fiiles in the current directory staring with <string>
 	$ find . -name <string>\*
+# the previous command
+	$ !! OR $ !-1
+# the most recent input that starts with "mak"
+	$ !mak
+# use the last term from the previous input
+	!$ # from 'ls /some/path', !$ = /home/path
 
 # shell if statements
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty
