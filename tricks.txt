@@ -109,6 +109,16 @@ Ctrl+shift+F10: Run the code
 	?<target_string>
 	# disable highlights at other files
 	:noh
+# comment multiple line at once
+	# move the cursor to the first char of the first line in block code you want to comment and type "CTRL+V" to enter VISUAL BLOCK mode
+		# CTRL+V
+	# use down arrow button or j button to move the cursor down until you reach the last line of the code block
+		# move cursor down
+	# Then type the below key to enter INSERT mode
+		# shift+I
+	# type # or the character for commenting for the certain language
+		# type #
+	# click ESC and done
 
 # shell command
 # delete all files in current directory and its sub-directories where the file name starts with "foo"
