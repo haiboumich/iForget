@@ -156,6 +156,9 @@ Ctrl+shift+F10: Run the code
 	$ !mak
 # use the last term from the previous input
 	!$ # from 'ls /some/path', !$ = /home/path
+# get the 2nd row, 2nd column from the command output
+	$ <command> | sed -n '2p' | awk '{print $2}'
+	# notes: it may be quite useful to kill the process. 'sed' and 'awk' are really useful in text manipulation.
 
 # shell if statements
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty
