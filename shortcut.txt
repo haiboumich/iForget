@@ -1,0 +1,5 @@
+# iTerm2
+# split pane horizontally
+cmd+D
+# split pane vertically
+cmd+shift+D
