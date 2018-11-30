@@ -1,3 +1,4 @@
 # During the start command like ./start.sh, the following sentence will give the value "./" to SDIR
 SDIR=$(dirname "$0")
-
+# assign the default value
+: ${A:=value}
