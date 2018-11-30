@@ -3,6 +3,10 @@
 cmd+D
 # split pane vertically
 cmd+shift+D
+# switch between panes
+cmd+option+arrow
+# switch between tabs
+cmd+arrow
 
 # IntelliJ IDEA
 # open embedded terminal
