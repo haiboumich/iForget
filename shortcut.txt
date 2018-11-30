@@ -3,3 +3,11 @@
 cmd+D
 # split pane vertically
 cmd+shift+D
+
+# IntelliJ IDEA
+# open embedded terminal
+option+F12
+
+# VS code
+# open embedded terminal
+ctrl+`
