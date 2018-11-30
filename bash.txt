@@ -2,3 +2,6 @@
 SDIR=$(dirname "$0")
 # assign the default value
 : ${A:=value}
+# shell if statements
+# check if the first arg is an empty string, where ! means 'not', -z meanns empty
+    if [! -z $1]; then
