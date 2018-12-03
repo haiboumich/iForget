@@ -31,3 +31,4 @@ $ git checkout master # switch back to master
 	$ git checkout <destination branch>
 	$ git merge <source branch>
 	$ git push
+# pit: merge must be based on the local, a.k.a, if you want to merge from dev to master, you must pull the dev to local first.

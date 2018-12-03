@@ -161,6 +161,10 @@ Ctrl+shift+F10: Run the code
 	# notes: it may be quite useful to kill the process. 'sed' and 'awk' are really useful in text manipulation.
 	# example: kill the process which is using the port 1081
 	$ kill $(lsof -i tcp:1081 | sed -n '2p' | awk '{print $2}')
+# list the files w/ size under this directory
+	$ ll --block-size=M
+# count how much lines the file contains
+	$ wc -l <filename>
 
 # shell if statements
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty
