@@ -6,6 +6,8 @@ There is a website built for cheatsheet https://devhints.io/, I may want to buil
 	$ n stable
 # Use taobao image to help speed up the npm install
 	$ npm install --registry=https://registry.npm.taobao.org
+# check the installed npm package version
+	$ npm view <package name> version
 
 # Short key for WebStorm
 Alt+F12: internal terminal
