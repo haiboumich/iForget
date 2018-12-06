@@ -14,6 +14,8 @@ Alt+F12: internal terminal
 Ctrl+shift+F10: Run the code
 # Webstorm tricks
 	# split edit view: right click the doc tab and choose split
+# Find in Path
+	ctrl+shift+F
 
 # Docker
 # check images
