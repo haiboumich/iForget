@@ -1,3 +1,6 @@
 # python
 # request like requests.get("localhost:1080") won't work as you need to include the protocol scheme, without http:// part, requests has no idea how to connect to the remote server. The correct way to request is like the example below:
 	requests.get("http://localhost:1080")
+
+# react and axios
+	remember to pass http for domain name
