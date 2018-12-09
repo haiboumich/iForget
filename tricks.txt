@@ -185,3 +185,7 @@ To easily locate an item in the list, just start typing its name.
 # Linux system
 # check the number of cpus
 	$ lscpu
+
+# fabric
+# add the chaincode project under gopath using soft link
+	$ cd $GOPATH/src/github.com/hyperledger && ln - s <chaincode dir path>
