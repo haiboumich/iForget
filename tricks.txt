@@ -189,3 +189,7 @@ To easily locate an item in the list, just start typing its name.
 # fabric
 # add the chaincode project under gopath using soft link
 	$ cd $GOPATH/src/github.com/hyperledger && ln - s <chaincode dir path>
+# install the chaincode dependency
+	$ cd $GOPATH/src/github.com/hyperledger/<chaincode dir path> && goverdor sync
+# test the chaincode
+	$ go test
