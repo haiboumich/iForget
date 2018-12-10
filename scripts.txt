@@ -7,3 +7,6 @@ SDIR=$(dirname "$0")
 	if [ ! -z $1 ]; then
 # check the arguments number equals 3
 	if [ $# -eq 3  ]; then
+# tr command is used to translate, for instance if I want to translate upper case to lower case, the txt file cantains string HELLOWORLD
+	cat helloworld.txt | tr "[A-Z]" "[a-z]" # will output helloworld
+	
