@@ -4,4 +4,6 @@ SDIR=$(dirname "$0")
 : ${A:=value}
 # shell if statements
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty
-    if [! -z $1]; then
+	if [ ! -z $1 ]; then
+# check the arguments number equals 3
+	if [ $# -eq 3  ]; then
