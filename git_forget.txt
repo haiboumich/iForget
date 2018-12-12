@@ -1,3 +1,5 @@
+# Reference: (git tutorial) https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+
 # add this repo to local
 echo "# git" >> README.md
 git init
@@ -32,3 +34,6 @@ $ git checkout master # switch back to master
 	$ git merge <source branch>
 	$ git push
 # pit: merge must be based on the local, a.k.a, if you want to merge from dev to master, you must pull the dev to local first.
+
+# revert to a specific commit 
+	$ git reset --hard <hash>
