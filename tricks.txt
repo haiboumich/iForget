@@ -16,6 +16,8 @@ Ctrl+shift+F10: Run the code
 	# split edit view: right click the doc tab and choose split
 # Find in Path
 	ctrl+shift+F
+# Replace all
+	cmd + R
 
 # Docker
 # check images
