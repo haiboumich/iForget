@@ -26,3 +26,9 @@ mysql>
 # CPP
 # string length
 .length()
+
+# python
+# POST multipart/form-data without filename in HTTP request
+	$ import requests
+	$ requests.post('http://url', files = {'value_1': (None, '12345'), 'value_2': (None, '67890')})
+	# for more info, check the 1st answer in https://stackoverflow.com/questions/23120974/python-requests-post-multipart-form-data-without-filename-in-http-request
