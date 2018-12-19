@@ -1,12 +1,33 @@
+# output to null
+	$ <command> >/dev/null
+# redirect stderr 2 to stdout
+	$ <command> 2>&1
+
+# Grammar
 # During the start command like ./start.sh, the following sentence will give the value "./" to SDIR
 SDIR=$(dirname "$0")
 # assign the default value
 : ${A:=value}
-# shell if statements
-# check if the first arg is an empty string, where ! means 'not', -z meanns empty
-	if [ ! -z $1 ]; then
-# check the arguments number equals 3
-	if [ $# -eq 3  ]; then
+
+# Useful tools
 # tr command is used to translate, for instance if I want to translate upper case to lower case, the txt file cantains string HELLOWORLD
 	cat helloworld.txt | tr "[A-Z]" "[a-z]" # will output helloworld
-	
+# sed
+	# -i option(-it for darwin): change the content directly w/o printing on console, otherwise it will just print on console and will not change the original file
+	# general usage
+		$ sed -i "s/<beReplacedString>/<replaceString>/g" <filaPath>
+		# w/o g, it will only change if the beReplacedString shows up at head of each line 
+# awk
+# for more info about powerful "sed" and "awk", refer https://blog.csdn.net/gv7lzb0y87u7c/article/details/80490997
+
+# shell if statements
+# check if the first arg is an empty string, where ! means 'not', -z meanns empty
+    if [ ! -z $1 ]; then
+# check the arguments number equals 3
+    if [ $# -eq 3  ]; then
+# check if the directory exists
+	if [ -d "<filePath>" ]; then	
+
+# some usages
+# get the OS ARCH(My laptop will have the value of darwin-amd64)
+	$ OS_ARCH=$(echo "$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')-$(uname -m | sed 's/x86_64/amd64/g')" | awk '{print tolower($0)}')
