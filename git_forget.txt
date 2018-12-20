@@ -37,3 +37,8 @@ $ git checkout master # switch back to master
 
 # revert to a specific commit 
 	$ git reset --hard <hash>
+
+# check the diff between HEAD version
+	$ git diff version_num1 version_num2
+# clone the certain branch 
+	$ git clone -b branch .git

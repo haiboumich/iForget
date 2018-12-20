@@ -2,6 +2,14 @@
 	$ <command> >/dev/null
 # redirect stderr 2 to stdout
 	$ <command> 2>&1
+	> # rediect and overwrite
+	>> # redirect and append
+# set time to seconds in UTC
+	$ starttime=$(date +%s)
+# output from last command
+	$?
+# all params
+	$@
 
 # Grammar
 # During the start command like ./start.sh, the following sentence will give the value "./" to SDIR
@@ -27,6 +35,12 @@ SDIR=$(dirname "$0")
     if [ $# -eq 3  ]; then
 # check if the directory exists
 	if [ -d "<filePath>" ]; then	
+# comparison
+	$ -lt # less than
+	$ -ne # not equal
+# AND/OR
+	$ -o # or 
+	# -a # and
 
 # some usages
 # get the OS ARCH(My laptop will have the value of darwin-amd64)

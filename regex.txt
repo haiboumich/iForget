@@ -1,0 +1,11 @@
+# bash
+# match the string start with abc
+	^abc
+# match one of the string
+	[abc] # [^abc] matches every char besides abc
+# match the string 0 ~ any amounts
+	abc* 
+# match the string at least once
+	abc+ 
+# match the end of the line
+	123$ # only match the line ends with 123
