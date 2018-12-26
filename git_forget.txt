@@ -37,6 +37,8 @@ $ git checkout master # switch back to master
 
 # revert to a specific commit 
 	$ git reset --hard <hash>
+# revert to the current commit, like I want to stop the merge
+	$ git reset --hard HEAD
 
 # check the diff between HEAD version
 	$ git diff version_num1 version_num2
