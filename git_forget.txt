@@ -44,3 +44,8 @@ $ git checkout master # switch back to master
 	$ git diff version_num1 version_num2
 # clone the certain branch 
 	$ git clone -b branch .git
+
+# check the user.email
+	$ git config --global user.email
+# set the user.email
+	$ git config --global user.email "<email>"
