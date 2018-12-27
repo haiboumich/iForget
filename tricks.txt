@@ -42,6 +42,7 @@ Ctrl+shift+F10: Run the code
 	# if there is no parameter -it during "docker run", we need use cmd above to enter the container
 # read docker logs
 	$ docker log -f
+	$ docker logs <container name>
 # remove
 	# docker image
 		$ docker rmi <image1> <image2>
