@@ -45,3 +45,7 @@ SDIR=$(dirname "$0")
 # some usages
 # get the OS ARCH(My laptop will have the value of darwin-amd64)
 	$ OS_ARCH=$(echo "$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')-$(uname -m | sed 's/x86_64/amd64/g')" | awk '{print tolower($0)}')
+
+# replace the first occurance of a pattern with a given string, use $(parameter/pattern/string}
+# replace all occurances of a pattern, use $(parameter//pattern/string}
+	$ echo $(STRING// /$';'}
