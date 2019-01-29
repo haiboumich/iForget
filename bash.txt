@@ -49,3 +49,11 @@ SDIR=$(dirname "$0")
 # replace the first occurance of a pattern with a given string, use $(parameter/pattern/string}
 # replace all occurances of a pattern, use $(parameter//pattern/string}
 	$ echo $(STRING// /$';'}
+
+# array definition
+	arr=("a" "b" "c")
+# array length
+	${#arr[@]}
+
+# set domain to ip address
+	$ vim /etc/hosts # then type the mapping
