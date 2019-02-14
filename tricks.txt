@@ -188,6 +188,8 @@ To easily locate an item in the list, just start typing its name.
 # Linux system
 # check the number of cpus
 	$ lscpu
+# test network connection: telnet
+	$ telnet <address> <port>
 
 # fabric
 # add the chaincode project under gopath using soft link
