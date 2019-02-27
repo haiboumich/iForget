@@ -10,6 +10,8 @@
 	$?
 # all params
 	$@
+# the number of arguments, or the number of positional parameters passed to the script, shell or shell function
+	$#
 
 # Grammar
 # During the start command like ./start.sh, the following sentence will give the value "./" to SDIR
