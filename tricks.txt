@@ -173,6 +173,14 @@ Ctrl+shift+F10: Run the code
 	$ ll --block-size=M
 # count how much lines the file contains
 	$ wc -l <filename>
+# check the hostname
+	$ hostname
+# check whoami
+	$ whoami
+# check who is using the machine
+	$ w
+# check what they are doing
+	$ top
 
 # shell if statements
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty
