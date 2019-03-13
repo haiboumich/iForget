@@ -127,6 +127,10 @@ Ctrl+shift+F10: Run the code
 	# type # or the character for commenting for the certain language
 		# type #
 	# click ESC and done
+# check the fileformat
+	$ set ff
+# set the fileformat
+	$ set ff=unix OR dos
 
 # shell command
 # delete all files in current directory and its sub-directories where the file name starts with "foo"
