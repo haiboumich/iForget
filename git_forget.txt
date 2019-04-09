@@ -22,12 +22,14 @@ $ git check out [remote branch] # if it is the local branch, then we need to cha
 $ git pull
 
 # switch the branch
-$ git branch -a # check all the branches
-$ git branch # check the local branch
-$ git checkout [remote branch] # change to the branch
+	$ git branch -a # check all the branches
+	$ git branch # check the local branch
+	$ git checkout [remote branch] # change to the branch
 # something might be helpful
-$ git checkout -b [new branch] [origin]/[new branch]
-$ git checkout master # switch back to master
+	$ git checkout -b [new branch] [origin]/[new branch]
+	$ git checkout master # switch back to master
+# update the local list of remote branches
+	$ git remote update origin --prune
 
 # merge 
 	$ git checkout <destination branch>
