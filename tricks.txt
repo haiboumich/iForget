@@ -135,6 +135,7 @@ Ctrl+shift+F10: Run the code
 # shell command
 # delete all files in current directory and its sub-directories where the file name starts with "foo"
 	$ find . -type f -name foo\* -exec rm {} \;
+	$ grep -R -i "<foo>" *
 # check the port being used
 	$ sudo lsof -i tcp:<port number>
 # to run the program at the background, first ctrl+z
