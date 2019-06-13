@@ -1,7 +1,15 @@
+# bash: the default shell in linux
+
+# change the default shell
+	$ chsh <username> -s /bin/sh 
+
 # output to null
 	$ <command> >/dev/null
 # redirect stderr 2 to stdout
 	$ <command> 2>&1
+		# examples: 
+		$ cat <filename> > output.txt 2>&1
+		$ cat <filename> &> output.txt
 	> # rediect and overwrite
 	>> # redirect and append
 # set time to seconds in UTC
@@ -9,7 +17,7 @@
 # output from last command
 	$?
 # all params
-	$@
+	$@ # $* all params separated by space
 # the number of arguments, or the number of positional parameters passed to the script, shell or shell function
 	$#
 
@@ -31,6 +39,14 @@ SDIR=$(dirname "$0")
 # for more info about powerful "sed" and "awk", refer https://blog.csdn.net/gv7lzb0y87u7c/article/details/80490997
 
 # shell if statements
+# basic usages
+	if [ condition ]; then
+		commands
+	elif  [ condition ]; then
+		commands
+	else
+		commands
+	fi
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty
     if [ ! -z $1 ]; then
 # check the arguments number equals 3
@@ -43,6 +59,33 @@ SDIR=$(dirname "$0")
 # AND/OR
 	$ -o # or 
 	# -a # and
+
+# case usages
+case ${VAR} in
+	pattern1)
+		command1
+		;;
+	pattern2)
+		command2
+		;;
+esac
+
+# while 
+i=1
+sum=0
+while [ $i -le 100 ]
+do 
+	let sum=sum+$i
+	let i++
+done
+
+# until
+until [ ! $i -lt 100 ]
+do 
+	let sum=sum+$i
+	let i++
+done
+
 
 # some usages
 # get the OS ARCH(My laptop will have the value of darwin-amd64)
@@ -59,3 +102,4 @@ SDIR=$(dirname "$0")
 
 # set domain to ip address
 	$ vim /etc/hosts # then type the mapping
+
