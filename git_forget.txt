@@ -8,7 +8,7 @@ git commit -m "first commit"
 git remote add origin https://github.com/haiboumich/git.git
 git push -u origin master
 
-# push and git push
+# basic push usage
 git status
 git add -A
 git commit -m "info"
@@ -51,3 +51,36 @@ $ git pull
 	$ git config --global user.email
 # set the user.email
 	$ git config --global user.email "<email>"
+
+# Some other knowledges
+	$ git add -A # stage all changes
+	$ git add .  # stage new files and modification, without deletions
+	$ git add -u # stage modification and deletions, without new files
+
+# reset
+	# after "git add"
+		$ git reset HEAD # reset all
+		$ git reset HEAD <filepath> # reset a certain file, remove this file from the buffer
+	# after "git commit"
+		$ git reset --soft HEAD^ # revoke the commit but keep the local code, HEAD^ means the last version
+		$ git reset --mixed HEAD^ # same as the default "git reset HEAD^", in addition to revoking commit like --soft does, it will also revoke "git add"
+		$ git reset --hard HEAD^ # in addition to what --mixed does, it will also revoke the local code modifications
+	# after "git push"
+		$ git revert <commit code> # make sure the local tree is clean, revert the local code to a historical one(use "git log" to check all the commit history)
+		$ git push
+	# difference between "git revert" and "git reset"
+		"git revert" is to use a new commit to revoke a old commit, "git reset" is to delete a certain commit
+
+# add some new file into the same commit
+	$ git commit -m "initial commit"
+	$ git add forgotten_file
+	$ git commit --amend
+
+# common zsh alias
+	$ gaa # git add -A
+	$ gcam # git commit -a -m
+	$ gp # git push
+	$ gl # git pull
+	$ gb # git branch
+	$ gba # git branch a
+	$ gd # git diff
