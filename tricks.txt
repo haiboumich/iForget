@@ -186,6 +186,8 @@ Ctrl+shift+F10: Run the code
 	$ w
 # check what they are doing
 	$ top
+# check the connection for certain port
+	netstat -ant | grep -i "port"
 
 # shell if statements
 # check if the first arg is an empty string, where ! means 'not', -z meanns empty

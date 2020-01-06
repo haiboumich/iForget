@@ -21,6 +21,21 @@ $ git branch # check the branch status
 $ git check out [remote branch] # if it is the local branch, then we need to change to the remote branch
 $ git pull
 
+# local create a new branch and push to remote
+## local create and checkout to a new branch
+	$ git checkout -b branchName
+## push the created branch to remote
+	$ git push origin branchName:branchName # localBranch:remoteBranch
+## build the connection from local to remote which makes it possible to push
+	$ git push --set-upstream origin mysql_delay_monitor
+
+# show remote and local branch
+	$ git remote show origin
+# sync to rm the remote deleted branch
+	$ git remote prune origin
+# rm redundant local branch
+	$ git branch -D branchName
+
 # switch the branch
 	$ git branch -a # check all the branches
 	$ git branch # check the local branch
