@@ -14,6 +14,13 @@ git add -A
 git commit -m "info"
 git push
 
+# return to the old commit by X
+$ git reset --hard HEAD~X
+$ git pull --rebase
+# compare remote and local commit
+$ git log master..origin/master
+$ git log origin/master..master
+
 # update to local
 $ git status # make sure there is no conflict before update
 $ git checkout -- filename # if the file has changed, we can restore it; if the file needs to be updated to the server, do the merge before update to local
