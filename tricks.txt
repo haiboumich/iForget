@@ -216,3 +216,7 @@ To easily locate an item in the list, just start typing its name.
 	$ cd $GOPATH/src/github.com/hyperledger/<chaincode dir path> && goverdor sync
 # test the chaincode
 	$ go test
+
+# tools
+## Node
+### nrm to change the source
