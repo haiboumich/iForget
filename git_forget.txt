@@ -106,3 +106,7 @@ $ git pull
 	$ gb # git branch
 	$ gba # git branch a
 	$ gd # git diff
+
+# roll back remote version
+	$ git reset --hard <version>
+	$ git push -f
