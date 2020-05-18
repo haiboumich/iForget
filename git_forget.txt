@@ -110,3 +110,9 @@ $ git pull
 # roll back remote version
 	$ git reset --hard <version>
 	$ git push -f
+
+# When you switch to a branch and something like this shows up, the reason might be that you teammate has rolled back some commits and you are still in the old newest commit
+#		Your branch is ahead of 'origin/master' by 2 commits.
+#			(use "git push" to publish your local commits)
+	$ git reset --hard origin/master # which means forget everything in local branch and keep it exactly same as remote origin/master
+
