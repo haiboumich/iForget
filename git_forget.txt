@@ -116,3 +116,7 @@ $ git pull
 #			(use "git push" to publish your local commits)
 	$ git reset --hard origin/master # which means forget everything in local branch and keep it exactly same as remote origin/master
 
+# forked repo wants to get the new branch created in original repo after forked
+	$ git remote add <original-org>/<project-name> <orginal repo addr>
+	$ git fetch <original-org>/<project-name>
+	$ git checkout <new branch in original org>
