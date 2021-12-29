@@ -110,6 +110,9 @@ $ git pull
 # roll back remote version
 	$ git reset --hard <version>
 	$ git push -f
+# roll back cooperation: if u r cooperating with a teammate, and he rolls back to commit1 after push commit1 and commit2 sequentially. Assume u have synced commit1 and commit2, which means u need to sync the roll back action
+	$ git pull
+	$ git reset --hard origin/<branch-name> # make sure u have commit the personal local change as it will reset all code to commit1
 
 # When you switch to a branch and something like this shows up, the reason might be that you teammate has rolled back some commits and you are still in the old newest commit
 #		Your branch is ahead of 'origin/master' by 2 commits.
